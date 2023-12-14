@@ -1,0 +1,112 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #d9e0e5;
+    color: black;
+}
+/* navbar  */
+.navbar{
+    padding: 10px 40px;
+    background-color: #d9e0e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+.navbar-nav .nav-link:hover {
+    color: #4F77AA;
+    font-weight: 500;
+    border-top: 3px solid #4F77AA;
+    line-height: 28px; 
+
+}
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar-item{
+    padding: 0 18px;
+}
+.navbar-nav .nav-link {
+    color:rgb(24, 24, 24);
+    text-align: left;
+    font-size: 20px;
+    border-top: 2px solid #0a0a0a; 
+    padding-right: 10px; 
+    margin-right: 20px; 
+    transition: color 0.5s ease, border-top-color 0.5s ease; 
+}
+
+/* intro section  */
+/* .intro-section{ 
+    background-color: #4F77AA;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 5%;
+}
+.text-section h1, .text-section p {
+    background-color: transparent;
+    text-align: center;
+}
+.study-lock-home{
+    background: transparent;
+    height: 500px;
+    align-items: center;
+} */
+
+.intro-section{ 
+    background-color: #4F77AA;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.text-section{
+    background-color: #4F77AA;
+}
+.text-section h1{
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.text-section p {
+    background-color: transparent;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+.study-lock-home{
+    background: transparent;
+    padding-left: 2%;
+    padding-bottom: 5%;
+    height: 650px;
+    margin-top: 0; 
+}
+.info-section-container{
+    background-color: #d9e0e5;
+    position: relative; 
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5% 20%;
+
+}
+.info-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* padding-bottom: 5%; */
+    margin-bottom: 0;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding-bottom: 5%; */
+    margin-bottom: 0;
+    
+}

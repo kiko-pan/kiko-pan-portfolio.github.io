@@ -1,0 +1,524 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #d9e0e5;
+    color: #0a0a0a;
+}
+/* navbar  */
+.navbar{
+    padding: 10px 40px;
+    background-color: #d9e0e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.navbar-nav .nav-link:hover {
+    color: #4F77AA !important;
+    font-weight: 500;
+    border-top: 3px solid #4F77AA;
+    line-height: 28px; 
+}
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #0a0a0a;
+}
+.navbar-item{
+    padding: 0 18px;
+}
+.nav-link {
+    color: #060606 !important;
+    font-size: 20px;
+    border-top: 2px solid #0a0a0a; 
+    padding-right: 10px; 
+    margin-right: 20px; 
+    transition: color 0.5s ease, border-top-color 0.5s ease; 
+}
+/* about me section  */
+.container-about{
+    background-color: #d9e0e5;
+    height: 100vh;
+    width: 100vw;
+    position: relative; 
+}
+.rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: #3869a9;
+}
+.rectangle-inner {
+    position: absolute;
+    top: 15%;
+    left: 35%; 
+    width: 70%; 
+    height: 75%; 
+    background-color: rgba(43, 83, 139, 0.7);
+    text-align: center;
+}
+.rectangleInside {
+    position: absolute;
+    top: 4%;
+    left: 4%; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #739acd;
+}
+.circle {
+    position: absolute;
+    top: 33%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 250px; 
+    height: 250px; 
+    background-color: transparent; 
+    border-radius: 50%; 
+    background-image: url('images/pfp.JPG');
+    background-size: cover;
+    background-position: 90%;
+    border: 8px solid #3869a9;
+}
+.name p{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: transparent;
+}
+.line {
+    width: 60px;
+    height: 2px;
+    background-color: #3869a9;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.undergrad p{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 18px;
+    background-color: transparent;
+}
+.aboutme{
+    position: relative;
+    top: 30%; 
+    left: 48%; 
+    width: 30%;
+    height: 40%;
+    background-color: transparent;
+}
+.aboutTitle{
+    font-size: 50px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.resume {
+    display: inline-block; 
+    background-color: #3869a9;
+    border: none;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px; 
+    font-size: 18px;
+    color: white;
+    text-decoration: none; 
+    vertical-align: top;
+}
+.resume:hover{
+    background-color: #d9e0e5;
+    color: black;
+    border: 2px solid #3869a9;
+    line-height: 36px;
+
+}
+.portfolio{
+    display: inline-block; 
+    background-color: #d9e0e5;
+    border: 2px solid#3869a9;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 36px;
+    vertical-align: top;
+}
+.portfolio:hover{
+    background-color: #3869a9;
+    color: white;
+}
+.paraDescription{
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: 16px;
+    background-color: transparent;
+}
+.spacing-projects{
+    margin-top: 5%;
+}
+/* projects section  */
+.container-project{
+    background-color: #d9e0e5;
+    position: relative; 
+    padding: 5% 15%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    /* margin-top: 60px; */
+}
+
+.project{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.project-title{
+    font-weight: bold;
+    font-size: 30px;
+}
+.project-para{
+    padding-right: 30%;
+}
+.project-button {
+    position: relative;
+    top: 0%;
+    left: 0%; 
+}
+.view-project {
+    background-color: #3869a9;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    border: none;
+    z-index: 1; 
+    text-decoration: none; 
+    line-height: 40px; 
+}
+.view-project:hover{
+    background-color: #d9e0e5;
+    color: black;
+    border: 2px solid #3869a9;
+    line-height: 36px; 
+}
+.box {
+    border: 1.5px solid black;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.project-img{
+    height: 350px;
+}
+.cup-noodle-img{
+    padding-right: 80px;
+}
+.rental-img{
+    padding-right: 90px;
+}
+.in-progress{
+    background-color: rgb(73, 74, 75);
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    border: none;
+    z-index: 1; 
+    text-decoration: none; 
+    line-height: 40px; 
+}
+/* contact me section  */
+.container-contact-me{
+    background-color: #3869a9;
+    position: relative; 
+    padding: 10% 25%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 700px;
+    min-width: 300px;
+}
+.contact-section{
+    position: relative;
+    width: 100%;
+    min-width: 600px;
+    background-color: #d9e0e5;
+    padding: 10%
+}
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+}
+.overlay p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: transparent;
+    margin: 0;
+}
+.contact-rectangle{
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 10%; */
+}
+
+.contact-form{
+    height: 100%;
+    min-height: 40vh;
+}
+
+.email-message-container {
+    height: 60%;
+}
+
+.email-container {
+    height: 45%;
+}
+.message-container{
+    height: 55%;
+}
+
+.fname{
+    padding-bottom: 40px;
+}
+
+.labels{
+    font-size: 20px;
+    font-weight: bold;
+}
+.left-side{
+    width: 100%;
+}
+.right-side{
+    width: 100%;
+    /* padding-left: 10%; */
+    margin-left: 10%;
+}
+.input-boxFn{
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    outline: none;
+    padding-top: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.input-boxLn{
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    outline: none;
+    padding-top: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.email-box{
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+}
+.message-box{
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    resize:none;
+    overflow: auto;
+    /* padding-bottom: 10px; */
+}
+
+input[type=text]:focus {
+    border-bottom: 2.5px solid #3869a9;
+}
+
+.send-container{
+    height: 10%;
+}
+.send{
+    background-color: #3869a9;
+    position: absolute;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    border: none;
+    /* align-items: flex-end; */
+    font-size: 18px;
+    font-weight: bold;
+    /* padding-top: 10px; */
+}
+
+/* footer section  */
+footer{
+    padding: 10px 20px;
+    padding-bottom: 0;
+    font-size: 12px;
+    background-color: #d9e0e5;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    /* about me  */
+    .container-about{
+        height: 130vh;
+        background-color: #739acd;
+        min-height: 70vh;
+        /* min-width: 30vh; */
+    }
+    .rectangle {
+        width: 100vw;
+        height: 70vh; 
+        min-height: 70vh;
+        /* min-width: 30vh; */
+    }
+    .rectangle-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 45%;
+        height: 75%;
+        background-color: transparent;
+        min-height: 40vh;
+        /* min-width: 30vh; */
+    }
+    .rectangleInside{
+        min-height: 40vh;
+        /* min-width: 30vh; */
+    }
+
+    .circle {
+        width: 180px;
+        height: 180px;
+        min-height: 15vh;
+        min-width: 15vw;
+    }
+
+    .name p {
+        font-size: 20px;
+    }
+
+    .undergrad p {
+        font-size: 14px;
+    }
+
+    .aboutme {
+        /* display: none; */
+        /* background-color: #739acd; */
+        top: 55%;
+        left: auto;
+        width: auto;
+        margin: 5%;
+        /* min-width: 300px; */
+        min-height: 400px;
+    }
+    .aboutme-info{
+        /* min-width: 300px; */
+        min-height: 400px;
+        background-color: transparent;
+        overflow: auto;
+    }
+    .aboutTitle {
+        font-size: 30px;
+    }
+    
+    /* project  */
+    .container-project {
+        padding: 5% 5%;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-para {
+        padding-right: 0;
+    }
+
+    .project-button {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .project-img{
+        padding-right: 0;
+        padding-top: 50px; 
+    }
+    
+    /* contact me  */
+    .container-contact-me {
+        padding: 10%;
+        min-height: 700px;
+        min-width: 300px;
+    }
+
+    .contact-section {
+        height: auto; 
+        min-height: 50vh;
+        min-width: 30vw;
+        /* padding-bottom: 20%; */
+    }
+
+    .contact-form{
+        min-width: 300px;
+    }
+
+    .contact-rectangle {
+        flex-direction: column; 
+        height: 50%;
+        justify-content: flex-end;
+    }
+    
+    .email-message-container {
+        height: 50%;
+    }
+
+    .contact-rectangle, 
+    .email-message-container {
+        min-width: 300px;
+        min-height: 50%;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        margin: 0;
+    }
+    
+}
