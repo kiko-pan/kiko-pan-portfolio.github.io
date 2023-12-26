@@ -1,58 +1,57 @@
 *{
     font-family: 'Open Sans', sans-serif;
-    background-color: #d9e0e5;
-    color: black;
+    /* background-color: #1c1d1e; */
+    color: white;
 }
 /* navbar  */
 .navbar{
     padding: 10px 40px;
-    background-color: #d9e0e5;
+    background-color: #0e0e0e;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-
 }
 .navbar-nav .nav-link:hover {
-    color: #4F77AA;
+    color: #b962e9 !important;
     font-weight: 500;
-    border-top: 3px solid #4F77AA;
+    border-top: 3px solid #b962e9;
     line-height: 28px; 
-
 }
+.collapse{
+    background-color: #0e0e0e;
+}
+
 .navbar-brand {
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 2px;
+    background-color: transparent;
+    color: white !important;
 }
-.navbar-item{
-    padding: 0 18px;
+.nav-item{
+    background-color: #0e0e0e;
 }
-.navbar-nav .nav-link {
-    color:rgb(24, 24, 24);
-    text-align: left;
+.nav-link {
+    color: white !important;
     font-size: 20px;
-    border-top: 2px solid #0a0a0a; 
+    border-top: 2px solid white; 
     padding-right: 10px; 
     margin-right: 20px; 
+    background-color: #0e0e0e;
     transition: color 0.5s ease, border-top-color 0.5s ease; 
 }
-
 /* intro section  */
-/* .intro-section{ 
-    background-color: #4F77AA;
+.left-col{
     height: 100vh;
-    width: 100vw;
-    padding-top: 5%;
+    padding-top: 20%;
+    padding-left: 15%;
+    background-color: #1c1d1e;
 }
-.text-section h1, .text-section p {
-    background-color: transparent;
-    text-align: center;
+.right-col{
+    height: 100vh;
+    padding-top: 8%;
+    padding-left: 5%;
+    background-color: #1c1d1e;
 }
-.study-lock-home{
-    background: transparent;
-    height: 500px;
-    align-items: center;
-} */
-
-.intro-section{ 
+/* .intro-section{ 
     background-color: #4F77AA;
     height: 100vh;
     width: 100vw;
@@ -61,52 +60,264 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+} */
+.figma-link{
+    background-color: #b962e9;
+    padding: 5px 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.8;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}
+.figma-link:hover{
+    background-color: transparent;
+    border: 3px solid #b962e9;
+    padding: 5px 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.8;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
 }
 .text-section{
-    background-color: #4F77AA;
+    /* margin-right: 50%; */
+    background-color: transparent;
 }
 .text-section h1{
     background-color: transparent;
-    text-align: center;
     font-weight: bold;
     padding-bottom: 10px;
 }
 .text-section p {
     background-color: transparent;
-    text-align: center;
+    /* text-align: center; */
     font-size: 18px;
-    margin-bottom: 0;
-    padding-bottom: 5px;
+    /* margin-bottom: 0; */
+    padding-bottom: 10px;
 }
 .study-lock-home{
     background: transparent;
-    padding-left: 2%;
-    padding-bottom: 5%;
+    /* padding-right: 1%;
+    padding-bottom: 5%; */
     height: 650px;
     margin-top: 0; 
 }
+/* info section  */
 .info-section-container{
-    background-color: #d9e0e5;
+    background-color: #0e0e0e;
     position: relative; 
-    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 5% 20%;
+    padding: 5% 15%;
+}
+.col{
+    background-color: #0e0e0e;
+}
+.card-body{
+    background-color: #0e0e0e;
+}
+.card {
+    border: none;
+    color: #b962e9;
 
 }
-.info-title{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    /* padding-bottom: 5%; */
-    margin-bottom: 0;
+.tools{
+    padding: 0;
 }
-.info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* padding-bottom: 5%; */
+.tools-body{
+    padding-top: 5%;
+}
+.card-title{
+    font-weight: bold;
+    font-size: 22px;
+}
+.first-row{
+    padding-bottom: 5%;
+}
+/* background colors  */
+.white-background{
+    background-color: #1c1d1e;
+    padding: 5% 15%;
+}
+.gray-back{
+    background-color:#0e0e0e;
+    padding: 5% 15%;
+}
+.box{
+    background-color: #b962e9;
+    padding: 2px 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.8;
+    color: white;
+}
+/* project overview  */
+.overview-info{
+    padding-top: 20px;
     margin-bottom: 0;
-    
+    background-color: transparent;
+    line-height: 1.8;
+}
+/* objectives section  */
+.objectives-info{
+    /* padding-top: 20px; */
+    margin-bottom: 0;
+    background-color: transparent;
+    line-height: 1.8;
+    padding-top: 5px;
+}
+.objectives-heading{
+    padding-top: 20px;
+    font-size: 18px;
+    color: #b962e9;
+}
+ul{
+    background-color: transparent;
+    padding-top: 10px;
+    line-height: 1.8;
+}
+li{
+    background-color: transparent;
+}
+/* card sorting  */
+.sorting-info{
+    padding-top: 20px;
+    margin-bottom: 0;
+    background-color: transparent;
+    line-height: 1.8;
+    padding-bottom: 20px;
+}
+.sorting-imgs{
+   border-radius: 0;
+}
+.card-header{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* architecture diagram  */
+.arch-info{
+    padding-top: 20px;
+    margin-bottom: 0;
+    background-color: transparent;
+    line-height: 1.8;
+    padding-bottom: 20px;
+}
+.img-container{
+    text-align: center;
+    background-color: transparent;
+}
+.arch-img{
+    width: 600px;
+}
+/* low fidelity  */
+.low-fi-1{
+    background-color: transparent;
+    padding-top: 20px;
+    width: 700px;
+}
+.low-fi-2{
+    background-color: transparent;
+    padding-top: 10px;
+    width: 700px;
+}
+/* high fidelity  */
+.high-img{
+    margin-top: 10px;
+    width: 1000px;
+    margin-right: 20%;
+}
+/* user testing  */
+.user-testing-info{
+    padding-top: 20px;
+    margin-bottom: 0;
+    background-color: transparent;
+    line-height: 1.8;
+    padding-bottom: 20px;
+}
+.testing-header{
+    padding-top: 20px;
+    font-size: 18px;
+    color: #b962e9;
+    background-color: transparent;
+}
+.testing-info{
+    margin-bottom: 0;
+    background-color: transparent;
+    line-height: 1.8;
+    padding-top: 5px;
+}
+/* footer  */
+footer{
+    /* margin-top: 10px; */
+    padding: 5px 20px;
+    /* padding-bottom: 10px; */
+    font-size: 12px;
+    background-color: #0e0e0e;
+    color: white;
+}
+footer p{
+    margin-top: 10px;
+    /* padding: 15px 10px; */
+    background-color: #0e0e0e;
+}
+@media screen and (max-width: 700px){
+    .left-col{
+        height: 30vh;
+        padding-top: 20%;
+        background-color: #1c1d1e;
+    }
+    .right-col{
+        background-color: #1c1d1e;
+        text-align: center;
+    }
+    .text-section{
+        text-align: center;
+        background-color: transparent;
+    }
+    .text-section h1{
+        background-color: transparent;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    .text-section p {
+        background-color: transparent;
+        /* text-align: center; */
+        font-size: 18px;
+        /* margin-bottom: 0; */
+        padding-bottom: 10px;
+    }
+    .study-lock-home{
+        text-align: center;
+        background: transparent;
+        /* padding-right: 1%;
+        padding-bottom: 5%; */
+        height: 650px;
+        margin-top: 0; 
+    }
+    .arch-img{
+        width: 500px;
+    }
+    .low-fi-1{
+        background-color: transparent;
+        padding-top: 20px;
+        width: 500px;
+    }
+    .low-fi-2{
+        background-color: transparent;
+        padding-top: 10px;
+        width: 500px;
+    }
+    .high-img{
+        margin-top: 10px;
+        width: 500px;
+        margin-right: 20%;
+    }
 }
