@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="portfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
-
-<body>
+<body class="loaded">
     <!-- nav bar  -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand" href="#">Kiko Pan</a>
+        <a class="navbar-brand" href="index.html"><img src="images/kp-logo.png" alt="logo" class="logo-img"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a> 
+                    <a class="nav-link" href="index.html">About Me</a> 
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Resume.pdf" target="_blank">Resume</a>
@@ -85,7 +85,7 @@
                 <p class="project-title">Cup Noodle Redesign</p>
                 <p class="project-para">Elevate your cup noodle experience! With this redesign, we considered key factors such as sustainability, cost, safety, and efficiency. </p>
                 <div class="project-button">
-                    <a class="view-project" href="#">View Project</a>
+                    <a class="view-project" href="cup-noodle.html">View Project</a>
                     <div class="box"></div>
                 </div>
             </div>
@@ -140,12 +140,14 @@
                     </div>
                 </div>
                 <div class="send-container">
-                    <button type="submit" class="send" id="submitButton">Send</button>
-                    <!-- <button type="submit" class="send" value="Send!" onclick="success(event)">Send</button> -->
-                    <!-- <input type="submit" class="send" value="Send!" onclick="success(event)"> -->
+                        <button type="submit" class="btn" id="submitBtn" onclick="animateAndRedirect(event)">
+                            <span>Submit</span>
+                            <img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" class="check-img">
+                        </button>
                 </div>
+        
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://kiko-pan.github.io/kiko-pan-portfolio.github.io/">  
+                <input type="hidden" name="_next" value="https://kiko-pan.github.io/kiko-pan-portfolio.github.io/#contact">  
                 <input type="hidden" name="_template" value="table">
             </form>
             <div class="overlay" id="overlay"><p>Success!</p></div>
@@ -156,7 +158,6 @@
     <footer>
         <p><i class="fa-regular fa-copyright fa-sm"></i> 2023 Portfolio<br>
             Designed and Developed by Kiko Pan</p>
-        <!-- <br> -->
     </footer>
 
     <script src="portfolio.js"></script>
